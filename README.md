@@ -12,3 +12,6 @@ To run all programs
 ```
 
 To run a particular configuration, please refer to src/run.py
+
+The src/deepcoder folder contains the deepcoder implementation modified from
+https://github.com/dkamm/deepcoder
