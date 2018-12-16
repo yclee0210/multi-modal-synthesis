@@ -1,0 +1,130 @@
+2018-12-15 11:41:49,876 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 11:43:35,073 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,MAP(/4,x1),MAP(/4,x1)),x0), Got: ZIPWITH(min,ZIPWITH(min,MAP(/4,x1),x0),x0)
+2018-12-15 11:46:27,305 - DEBUG - Expected: ZIPWITH(*,SCAN1L(max,SCAN1L(max,x0)),x1), Got: ZIPWITH(*,ZIPWITH(max,SCAN1L(max,x0),x0),x1)
+2018-12-15 11:49:57,497 - DEBUG - Expected: ZIPWITH(+,TAKE(x1,x0),MAP(**2,TAKE(x1,x0))), Got: ZIPWITH(+,x0,ZIPWITH(*,x0,x0))
+2018-12-15 18:27:05,490 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:27:16,299 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 18:27:17,091 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: COUNT(EVEN,TAKE(COUNT(>0,x0),x0))
+2018-12-15 18:27:34,934 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(ODD,MAP(+1,FILTER(>0,x0)))
+2018-12-15 18:27:36,066 - DEBUG - Expected: SUM(MAP(+1,SORT(x0))), Got: SUM(ZIPWITH(max,MAP(+1,x0),x0))
+2018-12-15 18:29:07,716 - DEBUG - Expected: HEAD(SCAN1L(*,MAP(*3,x0))), Got: SUM(ZIPWITH(+,MAP(*3,x0),x0))
+2018-12-15 18:29:08,105 - DEBUG - Expected: COUNT(ODD,ZIPWITH(+,ZIPWITH(*,x0,x0),x1)), Got: COUNT(ODD,ZIPWITH(+,x0,x1))
+2018-12-15 18:29:21,469 - DEBUG - Expected: MINIMUM(SCAN1L(-,MAP(*2,x0))), Got: MINIMUM(MAP(*2,SCAN1L(-,x0)))
+2018-12-15 18:29:21,939 - DEBUG - Expected: COUNT(>0,DROP(x2,ZIPWITH(+,x1,x0))), Got: COUNT(ODD,ZIPWITH(-,x0,x0))
+2018-12-15 18:29:29,200 - DEBUG - Expected: COUNT(>0,ZIPWITH(+,x0,SCAN1L(-,x0))), Got: COUNT(>0,ZIPWITH(+,SCAN1L(-,x0),x0))
+2018-12-15 18:29:29,473 - DEBUG - Expected: MAXIMUM(MAP(*4,SCAN1L(max,x0))), Got: MAXIMUM(MAP(*4,x0))
+2018-12-15 18:29:32,025 - DEBUG - Expected: TAIL(ZIPWITH(-,x1,ZIPWITH(-,x0,x2))), Got: TAIL(ZIPWITH(+,ZIPWITH(-,x1,x0),x2))
+2018-12-15 18:29:32,368 - DEBUG - Expected: COUNT(EVEN,MAP(*3,ZIPWITH(*,x0,x1))), Got: COUNT(EVEN,ZIPWITH(*,x0,x1))
+2018-12-15 18:29:33,163 - DEBUG - Got expected: SUM(ZIPWITH(min,ZIPWITH(max,x0,x1),x2))
+2018-12-15 18:29:42,318 - DEBUG - Got expected: ACCESS(COUNT(EVEN,x0),MAP(+1,x0))
+2018-12-15 18:29:43,056 - DEBUG - Expected: TAIL(ZIPWITH(*,SCAN1L(*,x0),x0)), Got: ACCESS(COUNT(<0,x0),SCAN1L(*,x0))
+2018-12-15 18:29:51,409 - DEBUG - Expected: COUNT(<0,ZIPWITH(max,MAP(**2,x1),x0)), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 18:29:51,947 - DEBUG - Expected: MINIMUM(ZIPWITH(min,ZIPWITH(max,x1,x0),x1)), Got: MINIMUM(ZIPWITH(min,ZIPWITH(-,x0,x0),x1))
+2018-12-15 18:29:52,288 - DEBUG - Expected: COUNT(>0,MAP(*-1,ZIPWITH(*,x1,x0))), Got: COUNT(<0,ZIPWITH(*,x0,x1))
+2018-12-15 18:30:33,200 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(max,x2,ZIPWITH(*,x0,x1))), Got: ZIPWITH(+,ZIPWITH(max,ZIPWITH(*,x0,x1),x2),x1)
+2018-12-15 18:31:21,708 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(-,ZIPWITH(min,x2,x0),x1),x2), Got: ZIPWITH(*,ZIPWITH(-,ZIPWITH(min,x0,x2),x1),x2)
+2018-12-15 18:31:23,139 - DEBUG - Expected: ZIPWITH(-,x2,ZIPWITH(-,x0,ZIPWITH(min,x1,x1))), Got: ZIPWITH(-,x1,ZIPWITH(-,x0,x2))
+2018-12-15 18:31:26,555 - DEBUG - Got expected: FILTER(>0,SCAN1L(+,MAP(-1,x0)))
+2018-12-15 18:31:27,310 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(*,x0,MAP(/2,x0)),x0), Got: ZIPWITH(min,ZIPWITH(-,ZIPWITH(*,x0,x0),x0),x0)
+2018-12-15 18:31:31,087 - DEBUG - Expected: ZIPWITH(-,SCAN1L(+,x1),TAKE(x2,x0)), Got: ZIPWITH(-,SCAN1L(+,x1),x0)
+2018-12-15 18:31:31,250 - DEBUG - Expected: ZIPWITH(min,MAP(*-1,ZIPWITH(-,x0,x0)),MAP(*-1,ZIPWITH(-,x0,x0))), Got: ZIPWITH(-,x0,x0)
+2018-12-15 18:31:32,042 - DEBUG - Expected: MAP(/3,ZIPWITH(max,DROP(x2,x0),x1)), Got: DROP(x2,x0)
+2018-12-15 18:31:42,675 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(*,ZIPWITH(max,x0,x1),x1),ZIPWITH(max,x0,x1)), Got: ZIPWITH(max,ZIPWITH(*,ZIPWITH(max,x0,x1),x1),x0)
+2018-12-15 18:31:42,846 - DEBUG - Expected: MAP(/3,ZIPWITH(min,ZIPWITH(min,x0,x0),ZIPWITH(min,x0,x0))), Got: MAP(/3,x0)
+2018-12-15 18:42:35,601 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:43:47,544 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:44:14,170 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:44:35,944 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:47:22,750 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:47:37,213 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:48:01,949 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:48:34,543 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:50:54,506 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:51:19,747 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:51:36,573 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:52:09,592 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:52:47,820 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:54:09,578 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:54:38,949 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:55:14,873 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:55:53,359 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:56:45,477 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:57:57,840 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 18:58:43,498 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:03:16,249 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:04:22,211 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:06:02,036 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:06:20,961 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:06:38,223 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:06:40,061 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),MAP(/3,x0))
+2018-12-15 19:06:40,529 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,SORT(FILTER(>0,x0)))
+2018-12-15 19:07:32,392 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:07:49,841 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:07:51,249 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),MAP(/3,x0))
+2018-12-15 19:07:51,674 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,SORT(FILTER(>0,x0)))
+2018-12-15 19:08:07,517 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:08:24,895 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:08:26,235 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),MAP(/3,x0))
+2018-12-15 19:08:26,656 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,SORT(FILTER(>0,x0)))
+2018-12-15 19:09:03,192 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:09:20,711 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:09:22,093 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),MAP(/3,x0))
+2018-12-15 19:09:22,502 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,SORT(FILTER(>0,x0)))
+2018-12-15 19:12:24,640 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:12:34,882 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:12:36,746 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 19:12:51,463 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(ODD,MAP(+1,FILTER(>0,x0)))
+2018-12-15 19:13:04,571 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:13:24,340 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:13:25,814 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 19:13:26,411 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,REVERSE(FILTER(>0,x0)))
+2018-12-15 19:13:26,614 - DEBUG - Expected: SUM(MAP(+1,SORT(x0))), Got: SUM(SORT(MAP(+1,x0)))
+2018-12-15 19:14:24,665 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:14:44,375 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:14:45,851 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 19:14:46,348 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,REVERSE(FILTER(>0,x0)))
+2018-12-15 19:14:46,539 - DEBUG - Expected: SUM(MAP(+1,SORT(x0))), Got: SUM(SORT(MAP(+1,x0)))
+2018-12-15 19:15:24,632 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:15:44,598 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:15:46,074 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 19:15:46,597 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,REVERSE(FILTER(>0,x0)))
+2018-12-15 19:15:46,789 - DEBUG - Expected: SUM(MAP(+1,SORT(x0))), Got: SUM(SORT(MAP(+1,x0)))
+2018-12-15 19:18:10,472 - DEBUG - Expected: HEAD(SCAN1L(*,MAP(*3,x0))), Got: SUM(SORT(MAP(*4,x0)))
+2018-12-15 19:18:11,102 - DEBUG - Expected: COUNT(ODD,ZIPWITH(+,ZIPWITH(*,x0,x0),x1)), Got: COUNT(EVEN,ZIPWITH(+,MAP(+1,x0),x1))
+2018-12-15 19:18:37,994 - DEBUG - Expected: MINIMUM(SCAN1L(-,MAP(*2,x0))), Got: MINIMUM(MAP(*2,SCAN1L(-,x0)))
+2018-12-15 19:18:38,459 - DEBUG - Expected: COUNT(>0,DROP(x2,ZIPWITH(+,x1,x0))), Got: COUNT(ODD,ZIPWITH(-,TAKE(x2,x0),x0))
+2018-12-15 19:19:37,748 - DEBUG - Expected: COUNT(>0,ZIPWITH(+,x0,SCAN1L(-,x0))), Got: COUNT(>0,ZIPWITH(+,SCAN1L(-,x0),x0))
+2018-12-15 19:19:43,534 - DEBUG - Expected: MAXIMUM(MAP(*4,SCAN1L(max,x0))), Got: MAXIMUM(MAP(*4,x0))
+2018-12-15 19:19:51,993 - DEBUG - Expected: TAIL(ZIPWITH(-,x1,ZIPWITH(-,x0,x2))), Got: TAIL(ZIPWITH(+,ZIPWITH(-,x1,x0),x2))
+2018-12-15 19:19:52,732 - DEBUG - Expected: COUNT(EVEN,MAP(*3,ZIPWITH(*,x0,x1))), Got: COUNT(EVEN,ZIPWITH(*,MAP(*3,x0),x1))
+2018-12-15 19:20:00,312 - DEBUG - Got expected: SUM(ZIPWITH(min,ZIPWITH(max,x0,x1),x2))
+2018-12-15 19:31:35,142 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:31:51,452 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_ah
+2018-12-15 19:32:11,692 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 19:32:13,181 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 19:32:13,704 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(EVEN,REVERSE(FILTER(>0,x0)))
+2018-12-15 19:32:13,896 - DEBUG - Expected: SUM(MAP(+1,SORT(x0))), Got: SUM(SORT(MAP(+1,x0)))
+2018-12-15 19:34:27,324 - DEBUG - Expected: HEAD(SCAN1L(*,MAP(*3,x0))), Got: SUM(SORT(MAP(*4,x0)))
+2018-12-15 19:34:28,009 - DEBUG - Expected: COUNT(ODD,ZIPWITH(+,ZIPWITH(*,x0,x0),x1)), Got: COUNT(EVEN,ZIPWITH(+,MAP(+1,x0),x1))
+2018-12-15 19:34:53,942 - DEBUG - Expected: MINIMUM(SCAN1L(-,MAP(*2,x0))), Got: MINIMUM(MAP(*2,SCAN1L(-,x0)))
+2018-12-15 19:34:54,429 - DEBUG - Expected: COUNT(>0,DROP(x2,ZIPWITH(+,x1,x0))), Got: COUNT(ODD,ZIPWITH(-,TAKE(x2,x0),x0))
+2018-12-15 19:35:51,890 - DEBUG - Expected: COUNT(>0,ZIPWITH(+,x0,SCAN1L(-,x0))), Got: COUNT(>0,ZIPWITH(+,SCAN1L(-,x0),x0))
+2018-12-15 19:35:57,499 - DEBUG - Expected: MAXIMUM(MAP(*4,SCAN1L(max,x0))), Got: MAXIMUM(MAP(*4,x0))
+2018-12-15 19:36:05,699 - DEBUG - Expected: TAIL(ZIPWITH(-,x1,ZIPWITH(-,x0,x2))), Got: TAIL(ZIPWITH(+,ZIPWITH(-,x1,x0),x2))
+2018-12-15 19:36:06,353 - DEBUG - Expected: COUNT(EVEN,MAP(*3,ZIPWITH(*,x0,x1))), Got: COUNT(EVEN,ZIPWITH(*,MAP(*3,x0),x1))
+2018-12-15 19:36:13,545 - DEBUG - Got expected: SUM(ZIPWITH(min,ZIPWITH(max,x0,x1),x2))
+2018-12-15 19:39:13,698 - DEBUG - Expected: ACCESS(COUNT(EVEN,x0),MAP(+1,x0)), but timed out
+2018-12-15 19:39:13,984 - DEBUG - Expected: TAIL(ZIPWITH(*,SCAN1L(*,x0),x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 19:39:14,327 - DEBUG - Expected: COUNT(<0,ZIPWITH(max,MAP(**2,x1),x0)), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 19:39:15,308 - DEBUG - Expected: MINIMUM(ZIPWITH(min,ZIPWITH(max,x1,x0),x1)), Got: MINIMUM(ZIPWITH(min,MAP(/2,x0),x1))
+2018-12-15 19:39:15,954 - DEBUG - Expected: COUNT(>0,MAP(*-1,ZIPWITH(*,x1,x0))), Got: COUNT(>0,ZIPWITH(*,MAP(*-1,x0),x1))
+2018-12-15 19:42:16,184 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(max,x2,ZIPWITH(*,x0,x1))), but timed out
+2018-12-15 19:45:16,444 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(-,ZIPWITH(min,x2,x0),x1),x2), but timed out
+2018-12-15 19:48:16,691 - DEBUG - Expected: ZIPWITH(-,x2,ZIPWITH(-,x0,ZIPWITH(min,x1,x1))), but timed out
+2018-12-15 19:51:10,048 - DEBUG - Got expected: FILTER(>0,SCAN1L(+,MAP(-1,x0)))
+2018-12-15 19:54:10,287 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(*,x0,MAP(/2,x0)),x0), but timed out
+2018-12-15 19:54:24,475 - DEBUG - Expected: ZIPWITH(-,SCAN1L(+,x1),TAKE(x2,x0)), Got: ZIPWITH(+,MAP(*-1,x0),SCAN1L(+,x1))
+2018-12-15 19:54:25,005 - DEBUG - Expected: ZIPWITH(min,MAP(*-1,ZIPWITH(-,x0,x0)),MAP(*-1,ZIPWITH(-,x0,x0))), Got: REVERSE(ZIPWITH(-,x0,x0))
+2018-12-15 19:54:26,014 - DEBUG - Expected: MAP(/3,ZIPWITH(max,DROP(x2,x0),x1)), Got: DROP(x2,ZIPWITH(max,TAKE(x2,x0),x0))
+2018-12-15 19:57:26,255 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(*,ZIPWITH(max,x0,x1),x1),ZIPWITH(max,x0,x1)), but timed out
+2018-12-15 19:57:26,919 - DEBUG - Expected: MAP(/3,ZIPWITH(min,ZIPWITH(min,x0,x0),ZIPWITH(min,x0,x0))), Got: MAP(/3,x0)

@@ -1,0 +1,4 @@
+2018-12-15 20:44:47,738 - DEBUG - Starting script python -m run --program-size=4 --data-set=test --synthesizer=deepcoder
+2018-12-15 20:47:51,729 - DEBUG - Expected: MAXIMUM(MAP(/4,SCAN1L(-,MAP(-1,x0)))), but timed out
+2018-12-15 20:50:51,782 - DEBUG - Expected: MAXIMUM(ZIPWITH(+,TAKE(x1,MAP(*-1,x0)),TAKE(x1,MAP(*-1,x0)))), but timed out
+2018-12-15 20:50:51,822 - DEBUG - Expected: COUNT(<0,ZIPWITH(*,TAKE(x1,x0),ZIPWITH(*,TAKE(x1,x0),TAKE(x1,x0)))), Got: COUNT(<0,x0)

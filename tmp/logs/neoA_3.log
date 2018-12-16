@@ -1,0 +1,8 @@
+2018-12-15 11:25:00,176 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo_a
+2018-12-15 11:25:04,303 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,MAP(/4,x1),MAP(/4,x1)),x0), Got: ZIPWITH(min,x0,MAP(/4,x1))
+2018-12-15 11:25:06,991 - DEBUG - Expected: ZIPWITH(*,SCAN1L(max,SCAN1L(max,x0)),x1), Got: ZIPWITH(*,x1,SCAN1L(max,x0))
+2018-12-15 11:25:08,473 - DEBUG - Expected: ZIPWITH(+,TAKE(x1,x0),MAP(**2,TAKE(x1,x0))), Got: ZIPWITH(+,x0,ZIPWITH(*,x0,x0))
+2018-12-15 11:30:08,487 - DEBUG - Expected: FILTER(ODD,MAP(/3,ZIPWITH(*,x1,x0))), but timed out
+2018-12-15 11:35:08,512 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(min,x1,x0),ZIPWITH(+,x2,x2)), but timed out
+2018-12-15 11:40:08,533 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(*,x1,x0),ZIPWITH(-,x2,x1)), but timed out
+2018-12-15 11:41:23,887 - DEBUG - Expected: MAP(-1,ZIPWITH(min,x0,ZIPWITH(*,x0,x0))), Got: ZIPWITH(min,MAP(-1,x0),x0)

@@ -1,0 +1,263 @@
+2018-12-15 01:36:07,803 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 01:36:11,673 - DEBUG - Got expected: TAIL(FILTER(>0,x0))
+2018-12-15 01:36:12,592 - DEBUG - Expected: COUNT(>0,FILTER(ODD,x0)), Got: COUNT(ODD,FILTER(>0,x0))
+2018-12-15 01:36:16,875 - DEBUG - Got expected: MINIMUM(ZIPWITH(+,x0,x1))
+2018-12-15 01:36:17,749 - DEBUG - Expected: COUNT(>0,MAP(*-1,x0)), Got: COUNT(<0,SORT(x0))
+2018-12-15 01:36:19,106 - DEBUG - Got expected: TAIL(MAP(*-1,x0))
+2018-12-15 01:36:19,850 - DEBUG - Expected: COUNT(>0,MAP(+1,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 01:36:21,571 - DEBUG - Got expected: HEAD(MAP(/4,x0))
+2018-12-15 01:36:22,891 - DEBUG - Got expected: MAXIMUM(MAP(/4,x0))
+2018-12-15 01:36:23,758 - DEBUG - Expected: MAXIMUM(ZIPWITH(-,x0,x0)), Got: COUNT(ODD,MAP(*2,x0))
+2018-12-15 01:36:24,606 - DEBUG - Expected: COUNT(>0,ZIPWITH(max,x0,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 01:36:26,333 - DEBUG - Expected: TAIL(ZIPWITH(max,x0,x0)), Got: TAIL(ZIPWITH(min,x0,x0))
+2018-12-15 01:54:01,153 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 01:54:12,473 - DEBUG - Got expected: TAKE(COUNT(<0,x0),x0)
+2018-12-15 01:54:14,117 - DEBUG - Expected: ZIPWITH(*,x0,FILTER(<0,x0)), Got: ZIPWITH(*,FILTER(<0,x0),x0)
+2018-12-15 01:54:20,300 - DEBUG - Expected: ZIPWITH(*,FILTER(<0,x0),FILTER(<0,x0)), Got: MAP(**2,FILTER(<0,x0))
+2018-12-15 01:54:27,084 - DEBUG - Got expected: MAP(*-1,FILTER(>0,x0))
+2018-12-15 01:54:28,639 - DEBUG - Got expected: TAIL(FILTER(>0,x0))
+2018-12-15 01:54:30,376 - DEBUG - Got expected: MAP(+1,FILTER(EVEN,x0))
+2018-12-15 01:54:31,197 - DEBUG - Expected: COUNT(>0,FILTER(ODD,x0)), Got: COUNT(ODD,FILTER(>0,x0))
+2018-12-15 01:54:40,758 - DEBUG - Got expected: MAP(*4,FILTER(ODD,x0))
+2018-12-15 01:55:00,980 - DEBUG - Expected: TAKE(x1,SCAN1L(-,x0)), but not found
+2018-12-15 01:55:09,207 - DEBUG - Expected: TAKE(x1,SCAN1L(max,x0)), Got: SCAN1L(max,TAKE(x1,x0))
+2018-12-15 01:55:11,023 - DEBUG - Expected: REVERSE(TAKE(x1,x0)), Got: REVERSE(x0)
+2018-12-15 01:55:15,906 - DEBUG - Expected: SCAN1L(*,TAKE(x1,x0)), Got: SCAN1L(*,x0)
+2018-12-15 01:55:18,122 - DEBUG - Expected: ZIPWITH(+,TAKE(x1,x0),TAKE(x1,x0)), Got: ZIPWITH(+,x0,x0)
+2018-12-15 01:55:26,097 - DEBUG - Got expected: TAKE(COUNT(<0,x0),x1)
+2018-12-15 01:55:29,495 - DEBUG - Got expected: ZIPWITH(max,FILTER(<0,x1),x0)
+2018-12-15 01:55:33,025 - DEBUG - Got expected: ZIPWITH(min,FILTER(<0,x1),x0)
+2018-12-15 01:55:36,628 - DEBUG - Expected: ZIPWITH(+,x0,FILTER(>0,x1)), Got: ZIPWITH(+,FILTER(>0,x1),x0)
+2018-12-15 01:55:39,816 - DEBUG - Expected: ZIPWITH(max,x0,FILTER(ODD,x1)), Got: ZIPWITH(max,FILTER(ODD,x1),x0)
+2018-12-15 01:55:48,089 - DEBUG - Expected: ZIPWITH(+,x1,DROP(x2,x0)), Got: ZIPWITH(min,DROP(x2,x0),x0)
+2018-12-15 01:55:56,436 - DEBUG - Expected: ZIPWITH(+,DROP(x2,x1),x0), Got: ZIPWITH(+,DROP(x2,x0),x0)
+2018-12-15 01:55:58,656 - DEBUG - Got expected: ZIPWITH(-,ZIPWITH(*,x0,x1),x2)
+2018-12-15 01:56:23,884 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(*,x1,x2),x0), Got: ZIPWITH(*,x0,ZIPWITH(*,x2,x1))
+2018-12-15 01:56:26,113 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(+,x1,x2),x0), Got: ZIPWITH(+,ZIPWITH(+,x0,x1),x2)
+2018-12-15 01:56:28,982 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(+,x2,x1),x0), Got: ZIPWITH(*,ZIPWITH(+,x1,x2),x0)
+2018-12-15 01:56:31,185 - DEBUG - Got expected: ZIPWITH(*,ZIPWITH(-,x0,x1),x2)
+2018-12-15 01:56:42,745 - DEBUG - Got expected: ZIPWITH(+,x0,ZIPWITH(-,x1,x2))
+2018-12-15 01:56:45,133 - DEBUG - Got expected: ZIPWITH(max,ZIPWITH(min,x0,x2),x1)
+2018-12-15 01:56:46,673 - DEBUG - Expected: ZIPWITH(*,MAP(**2,x0),x1), Got: ZIPWITH(*,ZIPWITH(*,x0,x0),x1)
+2018-12-15 01:56:50,169 - DEBUG - Got expected: ZIPWITH(-,MAP(*3,x0),x1)
+2018-12-15 01:56:51,785 - DEBUG - Expected: ZIPWITH(*,x1,MAP(-1,x0)), Got: ZIPWITH(-,ZIPWITH(*,x0,x1),x1)
+2018-12-15 01:56:55,554 - DEBUG - Got expected: ZIPWITH(max,MAP(-1,x1),x0)
+2018-12-15 01:56:59,022 - DEBUG - Expected: ZIPWITH(*,x1,MAP(/3,x0)), Got: ZIPWITH(*,MAP(/3,x0),x1)
+2018-12-15 01:57:05,966 - DEBUG - Got expected: ZIPWITH(-,MAP(/3,x0),x1)
+2018-12-15 01:57:09,458 - DEBUG - Got expected: ZIPWITH(max,MAP(/4,x1),x0)
+2018-12-15 01:57:12,845 - DEBUG - Expected: ZIPWITH(*,x1,SCAN1L(-,x0)), Got: ZIPWITH(*,SCAN1L(-,x0),x1)
+2018-12-15 01:57:17,138 - DEBUG - Expected: ZIPWITH(max,x0,SCAN1L(-,x1)), Got: ZIPWITH(max,SCAN1L(-,x1),x0)
+2018-12-15 01:57:21,780 - DEBUG - Got expected: ZIPWITH(max,SCAN1L(-,x1),x0)
+2018-12-15 01:57:26,909 - DEBUG - Expected: ZIPWITH(*,x0,SORT(x1)), Got: ZIPWITH(*,SORT(x1),x0)
+2018-12-15 01:57:44,629 - DEBUG - Got expected: TAKE(TAIL(x0),x1)
+2018-12-15 01:57:50,405 - DEBUG - Expected: ZIPWITH(max,x1,ZIPWITH(*,x0,x0)), Got: ZIPWITH(max,x1,MAP(**2,x0))
+2018-12-15 01:58:17,766 - DEBUG - Got expected: FILTER(>0,ZIPWITH(*,x0,x1))
+2018-12-15 01:58:33,188 - DEBUG - Expected: REVERSE(ZIPWITH(*,x0,x1)), but not found
+2018-12-15 01:58:34,706 - DEBUG - Expected: ZIPWITH(-,ZIPWITH(*,x0,x1),ZIPWITH(*,x0,x1)), Got: ZIPWITH(*,ZIPWITH(-,x0,x0),x1)
+2018-12-15 01:58:36,243 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(*,x1,x0)), Got: ZIPWITH(+,ZIPWITH(*,x0,x1),x1)
+2018-12-15 01:58:41,844 - DEBUG - Expected: ZIPWITH(-,x0,ZIPWITH(*,x1,x1)), Got: ZIPWITH(-,x0,MAP(**2,x1))
+2018-12-15 01:58:45,831 - DEBUG - Got expected: MINIMUM(ZIPWITH(+,x0,x1))
+2018-12-15 01:58:47,339 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(-,x0,x0)), Got: ZIPWITH(*,ZIPWITH(-,x0,x0),x1)
+2018-12-15 01:58:48,861 - DEBUG - Got expected: ZIPWITH(*,ZIPWITH(-,x0,x0),x1)
+2018-12-15 01:58:50,407 - DEBUG - Expected: ZIPWITH(*,x0,ZIPWITH(-,x0,x1)), Got: ZIPWITH(*,ZIPWITH(-,x0,x1),x0)
+2018-12-15 01:58:52,147 - DEBUG - Got expected: ZIPWITH(+,ZIPWITH(-,x1,x0),x1)
+2018-12-15 01:58:57,791 - DEBUG - Got expected: MAP(+1,ZIPWITH(max,x0,x1))
+2018-12-15 01:58:59,331 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(max,x1,x0)), Got: ZIPWITH(*,ZIPWITH(max,x0,x1),x1)
+2018-12-15 01:59:00,841 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(max,x1,x0),ZIPWITH(max,x1,x0)), Got: ZIPWITH(max,ZIPWITH(min,x0,x0),x1)
+2018-12-15 01:59:02,341 - DEBUG - Expected: ZIPWITH(min,x0,ZIPWITH(min,x0,x1)), Got: ZIPWITH(min,ZIPWITH(min,x0,x0),x1)
+2018-12-15 01:59:25,607 - DEBUG - Expected: FILTER(EVEN,ZIPWITH(min,x1,x0)), Got: FILTER(EVEN,ZIPWITH(min,x0,x1))
+2018-12-15 01:59:31,374 - DEBUG - Expected: MAP(/4,ZIPWITH(min,x1,x0)), Got: MAP(/4,ZIPWITH(min,x0,x1))
+2018-12-15 01:59:41,874 - DEBUG - Expected: FILTER(<0,MAP(**2,x0)), Got: FILTER(<0,SCAN1L(max,x0))
+2018-12-15 01:59:42,606 - DEBUG - Expected: COUNT(>0,MAP(*-1,x0)), Got: COUNT(<0,SORT(x0))
+2018-12-15 01:59:44,492 - DEBUG - Expected: SCAN1L(max,MAP(*-1,x0)), Got: MAP(*-1,SCAN1L(min,x0))
+2018-12-15 01:59:45,664 - DEBUG - Got expected: TAIL(MAP(*-1,x0))
+2018-12-15 01:59:51,479 - DEBUG - Expected: SCAN1L(max,MAP(*2,x0)), Got: MAP(*2,SCAN1L(max,x0))
+2018-12-15 01:59:53,254 - DEBUG - Expected: ZIPWITH(*,MAP(*2,x0),MAP(*2,x0)), Got: ZIPWITH(*,MAP(*4,x0),x0)
+2018-12-15 01:59:54,762 - DEBUG - Expected: ZIPWITH(min,x0,MAP(*3,x0)), Got: ZIPWITH(min,MAP(*3,x0),x0)
+2018-12-15 01:59:59,079 - DEBUG - Got expected: MAP(**2,MAP(*4,x0))
+2018-12-15 02:00:00,032 - DEBUG - Got expected: REVERSE(MAP(*4,x0))
+2018-12-15 02:00:00,848 - DEBUG - Expected: ZIPWITH(-,MAP(*4,x0),x0), Got: ZIPWITH(+,ZIPWITH(+,x0,x0),x0)
+2018-12-15 02:00:01,582 - DEBUG - Expected: COUNT(>0,MAP(+1,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 02:00:04,506 - DEBUG - Expected: REVERSE(MAP(+1,x0)), Got: MAP(+1,REVERSE(x0))
+2018-12-15 02:00:06,331 - DEBUG - Got expected: ZIPWITH(max,MAP(+1,x0),x0)
+2018-12-15 02:00:11,301 - DEBUG - Expected: FILTER(>0,MAP(-1,x0)), Got: MAP(-1,FILTER(>0,x0))
+2018-12-15 02:00:12,636 - DEBUG - Expected: FILTER(ODD,MAP(-1,x0)), Got: MAP(-1,FILTER(EVEN,x0))
+2018-12-15 02:00:18,936 - DEBUG - Expected: ZIPWITH(max,MAP(/2,x0),MAP(/2,x0)), Got: MAP(/2,x0)
+2018-12-15 02:00:20,381 - DEBUG - Got expected: HEAD(MAP(/4,x0))
+2018-12-15 02:00:21,720 - DEBUG - Got expected: MAXIMUM(MAP(/4,x0))
+2018-12-15 02:00:24,493 - DEBUG - Expected: ZIPWITH(min,MAP(/4,x0),MAP(/4,x0)), Got: MAP(/4,x0)
+2018-12-15 02:00:25,467 - DEBUG - Expected: MAP(/4,REVERSE(x0)), Got: REVERSE(MAP(/4,x0))
+2018-12-15 02:00:29,121 - DEBUG - Expected: ZIPWITH(*,REVERSE(x0),REVERSE(x0)), Got: MAP(**2,REVERSE(x0))
+2018-12-15 02:00:30,821 - DEBUG - Got expected: ZIPWITH(max,SCAN1L(*,x0),x0)
+2018-12-15 02:00:33,975 - DEBUG - Expected: MAP(*3,SCAN1L(+,x0)), Got: SCAN1L(+,MAP(*3,x0))
+2018-12-15 02:00:41,615 - DEBUG - Got expected: MAP(/4,SCAN1L(+,x0))
+2018-12-15 02:01:25,295 - DEBUG - Got expected: FILTER(<0,SCAN1L(-,x0))
+2018-12-15 02:01:29,752 - DEBUG - Got expected: MAP(/3,SCAN1L(max,x0))
+2018-12-15 02:01:30,491 - DEBUG - Expected: ZIPWITH(min,SCAN1L(max,x0),x0), Got: x0
+2018-12-15 02:01:31,772 - DEBUG - Got expected: SCAN1L(*,SCAN1L(min,x0))
+2018-12-15 02:01:38,659 - DEBUG - Expected: ZIPWITH(max,x0,SORT(x0)), Got: ZIPWITH(max,SORT(x0),x0)
+2018-12-15 02:01:47,868 - DEBUG - Got expected: TAKE(TAIL(x0),x0)
+2018-12-15 02:01:54,083 - DEBUG - Got expected: MAP(/2,ZIPWITH(*,x0,x0))
+2018-12-15 02:01:56,909 - DEBUG - Got expected: MAP(*3,ZIPWITH(+,x0,x0))
+2018-12-15 02:02:15,408 - DEBUG - Got expected: SCAN1L(-,ZIPWITH(+,x0,x0))
+2018-12-15 02:02:16,679 - DEBUG - Expected: ZIPWITH(max,x0,ZIPWITH(+,x0,x0)), Got: ZIPWITH(max,ZIPWITH(+,x0,x0),x0)
+2018-12-15 02:02:17,608 - DEBUG - Expected: MAP(/4,ZIPWITH(-,x0,x0)), Got: SORT(ZIPWITH(-,x0,x0))
+2018-12-15 02:02:18,447 - DEBUG - Expected: MAXIMUM(ZIPWITH(-,x0,x0)), Got: COUNT(ODD,MAP(*2,x0))
+2018-12-15 02:02:19,348 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(-,x0,x0),x0), Got: x0
+2018-12-15 02:02:20,306 - DEBUG - Expected: COUNT(>0,ZIPWITH(max,x0,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 02:02:22,172 - DEBUG - Expected: TAIL(ZIPWITH(max,x0,x0)), Got: TAIL(ZIPWITH(min,x0,x0))
+2018-12-15 02:02:23,591 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(max,x0,x0),x0), Got: ZIPWITH(+,x0,x0)
+2018-12-15 02:02:33,257 - DEBUG - Expected: FILTER(>0,ZIPWITH(min,x0,x0)), Got: FILTER(>0,x0)
+2018-12-15 02:02:34,289 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(min,x0,x0),x0), Got: ZIPWITH(*,x0,x0)
+2018-12-15 02:02:35,605 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,x0,x0),x0), Got: x0
+2018-12-15 13:01:50,951 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 13:02:00,593 - DEBUG - Expected: COUNT(>0,MAP(*-1,x0)), Got: COUNT(<0,SORT(x0))
+2018-12-15 13:02:03,178 - DEBUG - Expected: TAIL(ZIPWITH(max,x0,x0)), Got: TAIL(ZIPWITH(min,x0,x0))
+2018-12-15 13:02:04,847 - DEBUG - Expected: COUNT(>0,FILTER(ODD,x0)), Got: COUNT(ODD,FILTER(>0,x0))
+2018-12-15 13:02:06,182 - DEBUG - Expected: COUNT(>0,MAP(+1,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 13:02:09,679 - DEBUG - Got expected: TAIL(MAP(*-1,x0))
+2018-12-15 13:02:11,041 - DEBUG - Expected: COUNT(>0,ZIPWITH(max,x0,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 13:04:08,010 - DEBUG - Got expected: MINIMUM(ZIPWITH(+,x0,x1))
+2018-12-15 13:04:11,581 - DEBUG - Got expected: TAIL(FILTER(>0,x0))
+2018-12-15 13:04:14,709 - DEBUG - Got expected: HEAD(MAP(/4,x0))
+2018-12-15 13:04:15,922 - DEBUG - Expected: MAXIMUM(ZIPWITH(-,x0,x0)), Got: COUNT(ODD,MAP(*2,x0))
+2018-12-15 13:04:18,758 - DEBUG - Got expected: MAXIMUM(MAP(/4,x0))
+2018-12-15 13:04:33,660 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(min,x0,x2),x1), Got: ZIPWITH(min,ZIPWITH(max,x0,x1),ZIPWITH(max,x1,x2))
+2018-12-15 14:25:46,604 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 14:25:51,798 - DEBUG - Expected: COUNT(>0,MAP(*-1,x0)), Got: COUNT(<0,SORT(x0))
+2018-12-15 14:25:53,336 - DEBUG - Expected: TAIL(ZIPWITH(max,x0,x0)), Got: TAIL(ZIPWITH(min,x0,x0))
+2018-12-15 14:25:54,341 - DEBUG - Expected: COUNT(>0,FILTER(ODD,x0)), Got: COUNT(ODD,FILTER(>0,x0))
+2018-12-15 14:25:55,162 - DEBUG - Expected: COUNT(>0,MAP(+1,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 14:25:56,977 - DEBUG - Got expected: TAIL(MAP(*-1,x0))
+2018-12-15 14:25:57,802 - DEBUG - Expected: COUNT(>0,ZIPWITH(max,x0,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 14:26:58,949 - DEBUG - Got expected: MINIMUM(ZIPWITH(+,x0,x1))
+2018-12-15 14:27:01,444 - DEBUG - Got expected: TAIL(FILTER(>0,x0))
+2018-12-15 14:27:03,654 - DEBUG - Got expected: HEAD(MAP(/4,x0))
+2018-12-15 14:27:04,525 - DEBUG - Expected: MAXIMUM(ZIPWITH(-,x0,x0)), Got: COUNT(ODD,MAP(*2,x0))
+2018-12-15 14:27:06,470 - DEBUG - Got expected: MAXIMUM(MAP(/4,x0))
+2018-12-15 14:27:16,122 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(min,x0,x2),x1), Got: ZIPWITH(min,ZIPWITH(max,x0,x1),ZIPWITH(max,x1,x2))
+2018-12-15 14:31:10,117 - DEBUG - Got expected: MAP(/3,SCAN1L(max,x0))
+2018-12-15 14:34:10,132 - DEBUG - Expected: SCAN1L(max,MAP(*2,x0)), but timed out
+2018-12-15 14:34:12,352 - DEBUG - Expected: ZIPWITH(*,MAP(*2,x0),MAP(*2,x0)), Got: ZIPWITH(*,x0,MAP(*4,x0))
+2018-12-15 14:36:32,500 - DEBUG - Expected: MAP(/4,ZIPWITH(min,x1,x0)), Got: ZIPWITH(min,MAP(/4,x0),MAP(/4,x1))
+2018-12-15 14:37:16,181 - DEBUG - Expected: ZIPWITH(*,x1,MAP(/3,x0)), Got: ZIPWITH(*,ZIPWITH(min,x1,x1),MAP(/3,x0))
+2018-12-15 14:37:18,149 - DEBUG - Expected: ZIPWITH(*,x0,ZIPWITH(-,x0,x1)), Got: ZIPWITH(*,ZIPWITH(min,x0,x0),ZIPWITH(-,x0,x1))
+2018-12-15 14:37:20,169 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(-,x0,x0)), Got: ZIPWITH(*,ZIPWITH(-,x0,x0),ZIPWITH(*,x0,x1))
+2018-12-15 14:40:20,188 - DEBUG - Expected: REVERSE(MAP(+1,x0)), but timed out
+2018-12-15 14:40:21,249 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,x0,x0),x0), Got: x0
+2018-12-15 14:40:56,218 - DEBUG - Expected: ZIPWITH(max,MAP(-1,x1),x0), Got: ZIPWITH(max,ZIPWITH(max,x0,x0),MAP(-1,x1))
+2018-12-15 14:40:58,043 - DEBUG - Expected: ZIPWITH(*,MAP(**2,x0),x1), Got: ZIPWITH(*,ZIPWITH(min,x0,x0),ZIPWITH(*,x0,x1))
+2018-12-15 14:42:01,961 - DEBUG - Expected: SCAN1L(*,TAKE(x1,x0)), Got: SCAN1L(*,x0)
+2018-12-15 14:42:07,781 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(max,x1,x0)), Got: ZIPWITH(*,ZIPWITH(max,x0,x1),ZIPWITH(min,x1,x1))
+2018-12-15 14:42:10,294 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(max,x0,x0),x0), Got: ZIPWITH(+,x0,x0)
+2018-12-15 14:45:10,311 - DEBUG - Expected: TAKE(x1,SCAN1L(-,x0)), but timed out
+2018-12-15 14:45:12,915 - DEBUG - Got expected: MAP(+1,FILTER(EVEN,x0))
+2018-12-15 14:46:15,164 - DEBUG - Expected: ZIPWITH(+,x0,FILTER(>0,x1)), Got: ZIPWITH(+,FILTER(>0,x1),ZIPWITH(min,x0,x0))
+2018-12-15 14:48:30,987 - DEBUG - Expected: MAP(**2,MAP(*4,x0)), Got: ZIPWITH(*,MAP(*4,x0),MAP(*4,x0))
+2018-12-15 14:51:31,005 - DEBUG - Expected: REVERSE(TAKE(x1,x0)), but timed out
+2018-12-15 14:51:32,080 - DEBUG - Expected: MAP(/4,REVERSE(x0)), Got: REVERSE(MAP(/4,x0))
+2018-12-15 14:51:33,963 - DEBUG - Expected: ZIPWITH(min,x0,ZIPWITH(min,x0,x1)), Got: ZIPWITH(min,ZIPWITH(min,x0,x0),ZIPWITH(min,x0,x1))
+2018-12-15 14:53:10,818 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(*,x1,x2),x0), Got: ZIPWITH(*,x2,ZIPWITH(*,x0,x1))
+2018-12-15 14:53:13,637 - DEBUG - Expected: ZIPWITH(max,SCAN1L(*,x0),x0), Got: ZIPWITH(max,x0,SCAN1L(*,x0))
+2018-12-15 14:53:19,975 - DEBUG - Got expected: ZIPWITH(max,x0,ZIPWITH(+,x0,x0))
+2018-12-15 14:53:24,119 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(+,x1,x2),x0), Got: ZIPWITH(+,ZIPWITH(max,x0,x0),ZIPWITH(+,x1,x2))
+2018-12-15 14:53:28,094 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(+,x2,x1),x0), Got: ZIPWITH(*,ZIPWITH(max,x0,x0),ZIPWITH(+,x1,x2))
+2018-12-15 14:56:28,106 - DEBUG - Expected: FILTER(>0,MAP(-1,x0)), but timed out
+2018-12-15 14:57:29,565 - DEBUG - Expected: ZIPWITH(max,SCAN1L(-,x1),x0), Got: ZIPWITH(max,ZIPWITH(min,x0,x0),SCAN1L(-,x1))
+2018-12-15 15:00:29,584 - DEBUG - Expected: MAP(/2,ZIPWITH(*,x0,x0)), but timed out
+2018-12-15 15:01:11,804 - DEBUG - Expected: ZIPWITH(*,x1,SCAN1L(-,x0)), Got: ZIPWITH(*,ZIPWITH(min,x1,x1),SCAN1L(-,x0))
+2018-12-15 15:04:11,819 - DEBUG - Expected: TAKE(TAIL(x0),x1), but timed out
+2018-12-15 15:05:37,817 - DEBUG - Expected: ZIPWITH(+,x1,DROP(x2,x0)), Got: ZIPWITH(min,ZIPWITH(min,x0,x0),DROP(x2,x0))
+2018-12-15 15:05:49,292 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(-,x0,x1),x2), Got: ZIPWITH(*,ZIPWITH(-,x0,x1),ZIPWITH(max,x2,x2))
+2018-12-15 15:06:00,250 - DEBUG - Got expected: ZIPWITH(*,FILTER(<0,x0),FILTER(<0,x0))
+2018-12-15 15:06:02,189 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(-,x0,x0),x1), Got: ZIPWITH(*,ZIPWITH(-,x0,x0),ZIPWITH(*,x0,x1))
+2018-12-15 15:09:02,203 - DEBUG - Expected: ZIPWITH(*,REVERSE(x0),REVERSE(x0)), but timed out
+2018-12-15 15:09:10,728 - DEBUG - Expected: MAP(*3,ZIPWITH(+,x0,x0)), Got: ZIPWITH(+,ZIPWITH(+,x0,x0),MAP(*4,x0))
+2018-12-15 15:12:06,703 - DEBUG - Expected: MAP(+1,ZIPWITH(max,x0,x1)), Got: ZIPWITH(max,MAP(+1,x0),MAP(+1,x1))
+2018-12-15 20:18:16,794 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 20:18:21,045 - DEBUG - Expected: COUNT(>0,MAP(*-1,x0)), Got: COUNT(<0,SORT(x0))
+2018-12-15 20:18:21,790 - DEBUG - Expected: TAIL(ZIPWITH(max,x0,x0)), Got: TAIL(ZIPWITH(min,x0,x0))
+2018-12-15 20:18:22,121 - DEBUG - Expected: COUNT(>0,FILTER(ODD,x0)), Got: COUNT(ODD,FILTER(>0,x0))
+2018-12-15 20:18:22,333 - DEBUG - Expected: COUNT(>0,MAP(+1,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 20:18:23,470 - DEBUG - Got expected: TAIL(MAP(*-1,x0))
+2018-12-15 20:18:23,676 - DEBUG - Expected: COUNT(>0,ZIPWITH(max,x0,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 20:19:04,811 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 20:19:08,983 - DEBUG - Expected: COUNT(>0,MAP(*-1,x0)), Got: COUNT(<0,SORT(x0))
+2018-12-15 20:19:09,703 - DEBUG - Expected: TAIL(ZIPWITH(max,x0,x0)), Got: TAIL(ZIPWITH(min,x0,x0))
+2018-12-15 20:19:10,023 - DEBUG - Expected: COUNT(>0,FILTER(ODD,x0)), Got: COUNT(ODD,FILTER(>0,x0))
+2018-12-15 20:19:10,236 - DEBUG - Expected: COUNT(>0,MAP(+1,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 20:19:11,352 - DEBUG - Got expected: TAIL(MAP(*-1,x0))
+2018-12-15 20:19:11,552 - DEBUG - Expected: COUNT(>0,ZIPWITH(max,x0,x0)), Got: COUNT(>0,SORT(x0))
+2018-12-15 20:19:13,110 - DEBUG - Got expected: TAIL(FILTER(>0,x0))
+2018-12-15 20:19:14,389 - DEBUG - Got expected: HEAD(MAP(/4,x0))
+2018-12-15 20:19:14,577 - DEBUG - Expected: MAXIMUM(ZIPWITH(-,x0,x0)), Got: COUNT(ODD,MAP(*2,x0))
+2018-12-15 20:19:15,633 - DEBUG - Got expected: MAXIMUM(MAP(/4,x0))
+2018-12-15 20:19:21,811 - DEBUG - Got expected: ZIPWITH(max,ZIPWITH(min,x0,x2),x1)
+2018-12-15 20:19:31,906 - DEBUG - Got expected: MAP(/3,SCAN1L(max,x0))
+2018-12-15 20:19:41,724 - DEBUG - Expected: SCAN1L(max,MAP(*2,x0)), Got: MAP(*2,SCAN1L(max,x0))
+2018-12-15 20:19:45,646 - DEBUG - Expected: ZIPWITH(*,MAP(*2,x0),MAP(*2,x0)), Got: ZIPWITH(*,MAP(*4,x0),x0)
+2018-12-15 20:19:54,718 - DEBUG - Expected: MAP(/4,ZIPWITH(min,x1,x0)), Got: MAP(/4,ZIPWITH(min,x0,x1))
+2018-12-15 20:19:54,965 - DEBUG - Expected: ZIPWITH(*,x1,MAP(/3,x0)), Got: ZIPWITH(*,MAP(/3,x0),x1)
+2018-12-15 20:19:57,414 - DEBUG - Expected: ZIPWITH(*,x0,ZIPWITH(-,x0,x1)), Got: ZIPWITH(*,ZIPWITH(-,x0,x1),x0)
+2018-12-15 20:20:00,361 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(-,x0,x0)), Got: ZIPWITH(*,ZIPWITH(-,x0,x0),x1)
+2018-12-15 20:20:13,849 - DEBUG - Expected: REVERSE(MAP(+1,x0)), but not found
+2018-12-15 20:20:14,271 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,x0,x0),x0), Got: x0
+2018-12-15 20:20:14,607 - DEBUG - Got expected: ZIPWITH(max,MAP(-1,x1),x0)
+2018-12-15 20:20:15,356 - DEBUG - Got expected: ZIPWITH(*,MAP(**2,x0),x1)
+2018-12-15 20:20:20,887 - DEBUG - Expected: SCAN1L(*,TAKE(x1,x0)), Got: SCAN1L(*,x0)
+2018-12-15 20:20:24,055 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(max,x1,x0)), Got: ZIPWITH(*,ZIPWITH(max,x0,x1),x1)
+2018-12-15 20:20:24,754 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(max,x0,x0),x0), Got: ZIPWITH(+,x0,x0)
+2018-12-15 20:20:59,444 - DEBUG - Expected: TAKE(x1,SCAN1L(-,x0)), but not found
+2018-12-15 20:21:02,115 - DEBUG - Got expected: MAP(+1,FILTER(EVEN,x0))
+2018-12-15 20:21:03,230 - DEBUG - Expected: ZIPWITH(+,x0,FILTER(>0,x1)), Got: ZIPWITH(+,FILTER(>0,x1),x0)
+2018-12-15 20:21:33,032 - DEBUG - Got expected: MAP(**2,MAP(*4,x0))
+2018-12-15 20:22:01,122 - DEBUG - Expected: REVERSE(TAKE(x1,x0)), but not found
+2018-12-15 20:22:01,754 - DEBUG - Expected: MAP(/4,REVERSE(x0)), Got: REVERSE(MAP(/4,x0))
+2018-12-15 20:22:04,325 - DEBUG - Expected: ZIPWITH(min,x0,ZIPWITH(min,x0,x1)), Got: ZIPWITH(min,x0,x1)
+2018-12-15 20:22:06,778 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(*,x1,x2),x0), Got: ZIPWITH(*,x0,ZIPWITH(*,x2,x1))
+2018-12-15 20:22:18,190 - DEBUG - Got expected: ZIPWITH(max,SCAN1L(*,x0),x0)
+2018-12-15 20:22:19,509 - DEBUG - Expected: ZIPWITH(max,x0,ZIPWITH(+,x0,x0)), Got: ZIPWITH(max,ZIPWITH(+,x0,x0),x0)
+2018-12-15 20:22:23,794 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(+,x1,x2),x0), Got: ZIPWITH(+,ZIPWITH(+,x0,x1),x2)
+2018-12-15 20:22:31,005 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(+,x2,x1),x0), Got: ZIPWITH(*,ZIPWITH(+,x1,x2),x0)
+2018-12-15 20:22:37,933 - DEBUG - Expected: FILTER(>0,MAP(-1,x0)), Got: MAP(-1,FILTER(>0,x0))
+2018-12-15 20:22:39,534 - DEBUG - Got expected: ZIPWITH(max,SCAN1L(-,x1),x0)
+2018-12-15 20:22:53,275 - DEBUG - Got expected: MAP(/2,ZIPWITH(*,x0,x0))
+2018-12-15 20:22:53,509 - DEBUG - Expected: ZIPWITH(*,x1,SCAN1L(-,x0)), Got: ZIPWITH(*,SCAN1L(-,x0),x1)
+2018-12-15 20:24:14,919 - DEBUG - Got expected: TAKE(TAIL(x0),x1)
+2018-12-15 20:24:19,733 - DEBUG - Expected: ZIPWITH(+,x1,DROP(x2,x0)), Got: ZIPWITH(min,DROP(x2,x0),x0)
+2018-12-15 20:24:25,916 - DEBUG - Got expected: ZIPWITH(*,ZIPWITH(-,x0,x1),x2)
+2018-12-15 20:24:35,517 - DEBUG - Expected: ZIPWITH(*,FILTER(<0,x0),FILTER(<0,x0)), Got: MAP(**2,FILTER(<0,x0))
+2018-12-15 20:24:38,676 - DEBUG - Got expected: ZIPWITH(*,ZIPWITH(-,x0,x0),x1)
+2018-12-15 20:24:53,859 - DEBUG - Expected: ZIPWITH(*,REVERSE(x0),REVERSE(x0)), but not found
+2018-12-15 20:25:00,786 - DEBUG - Got expected: MAP(*3,ZIPWITH(+,x0,x0))
+2018-12-15 20:25:07,909 - DEBUG - Got expected: MAP(+1,ZIPWITH(max,x0,x1))
+2018-12-15 22:21:13,977 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:21:34,612 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:23:02,439 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:23:26,899 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:23:45,294 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:24:30,457 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:25:10,569 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:25:38,006 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:25:50,298 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:26:15,829 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:27:21,953 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:27:40,672 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:30:51,022 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:32:30,072 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:33:04,364 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:48:20,749 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:52:04,972 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:52:33,912 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:52:55,164 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:53:09,082 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:57:02,610 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:57:17,680 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:57:49,795 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:58:00,932 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 22:58:54,606 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 23:02:33,127 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 23:05:06,116 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 23:05:45,888 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 23:06:23,330 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah
+2018-12-15 23:06:35,383 - DEBUG - Starting script python -m run --program-size=2 --data-set=test --synthesizer=neo_ah

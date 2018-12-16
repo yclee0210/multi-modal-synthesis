@@ -1,0 +1,78 @@
+neo+
+LIST|FILTER,>0,0|TAIL,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.min <= y.min, y.first >= 0, y.first > 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+neo++                               TAIL(FILTER(>0,x0))         Took 15310 ms
+neo+                                TAIL(FILTER(>0,x0))         Took 73528 ms
+neo                                 TAIL(FILTER(>0,x0))         Took 85073 ms
+
+LIST|FILTER,ODD,0|COUNT,>0,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.min <= y.min, x0.len >= y.first, y.first >= 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    COUNT(ODD,FILTER(>0,x0))    Took 3634 ms
+                                    COUNT(ODD,FILTER(>0,x0))    Took 3676 ms
+                                    COUNT(ODD,FILTER(>0,x0))    Took 3641 ms
+
+LIST|LIST|ZIPWITH,+,0,1|MINIMUM,2
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.len >= y.first, And(x1.len >= 1, y.len == 1), x1.len >= y.len, x1.max >= y.max, x1.len >= y.first]
+{'ACCESS', 'SORT', 'DROP', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'TAIL', 'SCAN1L', 'TAKE', 'FILTER', 'ZIPWITH', 'SUM', 'MAP', 'HEAD'}
+                                    MINIMUM(ZIPWITH(+,x0,x1))   Took 109900 ms
+                                    MINIMUM(ZIPWITH(+,x0,x1))   Took 108686 ms
+                                    MINIMUM(ZIPWITH(+,x0,x1))   Took 117503 ms
+
+LIST|MAP,*-1,0|COUNT,>0,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.min <= y.min, x0.len >= y.first, y.first >= 0, y.first > 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    COUNT(<0,x0)                Took 369 ms
+                                    COUNT(<0,x0)                Took 322 ms
+                                    COUNT(<0,x0)                Took 328 ms
+
+LIST|MAP,*-1,0|TAIL,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.min <= y.min]
+{'SORT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    TAIL(MAP(*-1,x0))           Took 7784 ms
+                                    TAIL(MAP(*-1,x0))           Took 64303 ms
+                                    TAIL(MAP(*-1,x0))           Took 65867 ms
+
+LIST|MAP,+1,0|COUNT,>0,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.min <= y.min, x0.len >= y.first, y.first >= 0, y.first > 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    COUNT(>0,x0)                Took 343 ms
+                                    COUNT(>0,x0)                Took 322 ms
+                                    COUNT(>0,x0)                Took 329 ms
+
+LIST|MAP,/4,0|HEAD,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, y.first >= 0, y.first > 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    HEAD(MAP(/4,x0))            Took 15323 ms
+                                    HEAD(MAP(/4,x0))            Took 84251 ms
+                                    HEAD(MAP(/4,x0))            Took 87120 ms
+
+LIST|MAP,/4,0|MAXIMUM,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.min <= y.min, y.first >= 0, y.first > 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    MAXIMUM(MAP(/4,x0))         Took 14161 ms
+                                    MAXIMUM(MAP(/4,x0))         Took 73158 ms
+                                    MAXIMUM(MAP(/4,x0))         Took 81276 ms
+
+LIST|ZIPWITH,-,0,0|MAXIMUM,1
+[And(x0.len >= 1, y.len == 1), x0.len >= y.len, x0.min <= y.min, x0.len >= y.first, y.first >= 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    COUNT(ODD,MAP(*2,x0))       Took 1278 ms
+                                    COUNT(ODD,MAP(*2,x0))       Took 1020 ms
+                                    COUNT(ODD,MAP(*2,x0))       Took 1202 ms
+
+LIST|ZIPWITH,max,0,0|COUNT,>0,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.min <= y.min, x0.len >= y.first, y.first >= 0, y.first > 0]
+{'SORT', 'COUNT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    COUNT(>0,x0)                Took 361 ms
+                                    COUNT(>0,x0)                Took 329 ms
+                                    COUNT(>0,x0)                Took 523 ms
+
+LIST|ZIPWITH,max,0,0|TAIL,1
+[And(x0.len >= 1, y.len == 1), x0.len > y.len, x0.len >= y.len, x0.max >= y.max, x0.min <= y.min, x0.last == y.last]
+{'SORT', 'REVERSE', 'MAXIMUM', 'MINIMUM', 'SUM', 'TAIL', 'HEAD'}
+                                    TAIL(ZIPWITH(min,x0,x0))    Took 9289 ms
+                                    TAIL(ZIPWITH(min,x0,x0))    Took 73655 ms
+                                    TAIL(ZIPWITH(min,x0,x0))    Took 75290 ms
+

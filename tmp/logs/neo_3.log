@@ -1,0 +1,144 @@
+2018-12-15 06:41:53,955 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo
+2018-12-15 06:41:56,598 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,MAP(/4,x1),MAP(/4,x1)),x0), Got: ZIPWITH(min,x0,MAP(/4,x1))
+2018-12-15 06:41:57,840 - DEBUG - Expected: ZIPWITH(*,SCAN1L(max,SCAN1L(max,x0)),x1), Got: ZIPWITH(*,x1,SCAN1L(max,x0))
+2018-12-15 06:41:57,897 - DEBUG - Expected: ZIPWITH(+,TAKE(x1,x0),MAP(**2,TAKE(x1,x0))), Got: ZIPWITH(+,x0,ZIPWITH(*,x0,x0))
+2018-12-15 06:46:57,918 - DEBUG - Expected: FILTER(ODD,MAP(/3,ZIPWITH(*,x1,x0))), but timed out
+2018-12-15 06:51:57,946 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(min,x1,x0),ZIPWITH(+,x2,x2)), but timed out
+2018-12-15 06:56:57,972 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(*,x1,x0),ZIPWITH(-,x2,x1)), but timed out
+2018-12-15 06:58:11,418 - DEBUG - Expected: MAP(-1,ZIPWITH(min,x0,ZIPWITH(*,x0,x0))), Got: ZIPWITH(min,MAP(-1,x0),x0)
+2018-12-15 07:02:20,076 - DEBUG - Expected: ZIPWITH(min,MAP(*2,ZIPWITH(+,x0,x0)),x0), Got: ZIPWITH(min,x0,MAP(*4,x0))
+2018-12-15 07:07:20,103 - DEBUG - Expected: MAP(*4,MAP(**2,ZIPWITH(*,x0,x1))), but timed out
+2018-12-15 07:12:20,128 - DEBUG - Expected: SCAN1L(max,ZIPWITH(*,ZIPWITH(-,x1,x0),x2)), but timed out
+2018-12-15 07:13:54,955 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(max,x2,ZIPWITH(*,x0,x1))), Got: ZIPWITH(+,ZIPWITH(max,ZIPWITH(*,x0,x1),x2),x1)
+2018-12-15 07:13:56,161 - DEBUG - Expected: TAKE(SUM(x0),MAP(*-1,x1)), Got: ZIPWITH(-,ZIPWITH(-,x1,x1),x1)
+2018-12-15 07:18:56,182 - DEBUG - Expected: MAP(*4,ZIPWITH(min,ZIPWITH(max,x1,x0),ZIPWITH(max,x1,x0))), but timed out
+2018-12-15 07:23:56,209 - DEBUG - Expected: ZIPWITH(max,SORT(x0),ZIPWITH(min,x1,x0)), but timed out
+2018-12-15 07:28:56,229 - DEBUG - Expected: ZIPWITH(-,x1,ZIPWITH(max,x1,ZIPWITH(*,x0,x1))), but timed out
+2018-12-15 07:33:56,252 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(max,MAP(*-1,x0),x2)), but timed out
+2018-12-15 07:35:14,161 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(ODD,MAP(+1,FILTER(>0,x0)))
+2018-12-15 07:40:14,185 - DEBUG - Expected: ZIPWITH(-,x1,ZIPWITH(max,x2,MAP(*4,x0))), but timed out
+2018-12-15 07:40:15,508 - DEBUG - Expected: ZIPWITH(-,x0,ZIPWITH(min,x2,ZIPWITH(-,x0,x1))), Got: ZIPWITH(max,x1,ZIPWITH(-,x0,x2))
+2018-12-15 07:41:37,037 - DEBUG - Expected: ZIPWITH(*,x0,ZIPWITH(+,ZIPWITH(+,x2,x1),x0)), Got: ZIPWITH(*,ZIPWITH(+,ZIPWITH(+,x0,x1),x2),x0)
+2018-12-15 07:41:37,494 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(min,FILTER(>0,x1),FILTER(>0,x1)),x0), Got: ZIPWITH(*,FILTER(>0,x1),x0)
+2018-12-15 07:41:37,536 - DEBUG - Expected: ZIPWITH(+,x0,FILTER(<0,FILTER(>0,x1))), Got: FILTER(ODD,FILTER(EVEN,x0))
+2018-12-15 07:42:34,884 - DEBUG - Expected: ZIPWITH(-,MAP(/3,x0),ZIPWITH(min,x0,x0)), Got: MAP(*-1,ZIPWITH(-,x0,MAP(/3,x0)))
+2018-12-15 07:45:33,498 - DEBUG - Expected: ZIPWITH(*,x2,ZIPWITH(*,x2,ZIPWITH(-,x1,x0))), Got: ZIPWITH(*,ZIPWITH(*,ZIPWITH(-,x1,x0),x2),x2)
+2018-12-15 07:50:33,520 - DEBUG - Expected: DROP(COUNT(<0,x1),ZIPWITH(max,x1,x0)), but timed out
+2018-12-15 07:50:34,271 - DEBUG - Expected: ZIPWITH(min,x1,FILTER(>0,MAP(**2,x0))), Got: ZIPWITH(min,x1,ZIPWITH(*,x0,x0))
+2018-12-15 07:55:34,297 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(min,x1,x0),FILTER(EVEN,ZIPWITH(min,x1,x0))), but timed out
+2018-12-15 08:00:34,322 - DEBUG - Expected: TAKE(COUNT(EVEN,ZIPWITH(-,x0,x1)),x2), but timed out
+2018-12-15 08:05:34,348 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(max,SCAN1L(*,x0),x1),x0), but timed out
+2018-12-15 08:05:38,790 - DEBUG - Expected: MAP(*-1,MAP(-1,ZIPWITH(-,x1,x0))), Got: ZIPWITH(-,x0,MAP(-1,x1))
+2018-12-15 08:06:42,847 - DEBUG - Expected: ZIPWITH(+,x2,ZIPWITH(*,ZIPWITH(+,x0,x1),x0)), Got: ZIPWITH(+,ZIPWITH(*,ZIPWITH(+,x0,x1),x0),x2)
+2018-12-15 08:06:43,616 - DEBUG - Expected: ZIPWITH(-,ZIPWITH(max,ZIPWITH(min,x1,x1),x0),x0), Got: ZIPWITH(-,x1,ZIPWITH(min,x0,x1))
+2018-12-15 08:11:43,634 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(*,MAP(*2,x1),MAP(*2,x1)),x0), but timed out
+2018-12-15 08:16:43,658 - DEBUG - Expected: MAP(-1,FILTER(<0,ZIPWITH(max,x0,x1))), but timed out
+2018-12-15 08:16:43,845 - DEBUG - Expected: ZIPWITH(min,MAP(**2,x1),TAKE(x2,x0)), Got: ZIPWITH(min,x0,ZIPWITH(*,x1,x1))
+2018-12-15 08:18:50,009 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(max,x0,x0),ZIPWITH(+,x2,x1)), Got: ZIPWITH(max,x0,ZIPWITH(+,x1,x2))
+2018-12-15 08:18:50,439 - DEBUG - Expected: MAP(+1,ZIPWITH(-,x0,ZIPWITH(min,x1,x1))), Got: ZIPWITH(-,x0,MAP(-1,x1))
+2018-12-15 08:18:53,376 - DEBUG - Expected: ZIPWITH(*,DROP(x2,x1),ZIPWITH(max,x1,x0)), Got: DROP(COUNT(>0,x0),FILTER(>0,x0))
+2018-12-15 08:19:04,624 - DEBUG - Expected: COUNT(<0,ZIPWITH(max,MAP(**2,x1),x0)), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 08:19:19,513 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(+,x1,SCAN1L(-,x0)),ZIPWITH(+,x1,SCAN1L(-,x0))), Got: ZIPWITH(+,x1,SCAN1L(-,x0))
+2018-12-15 08:21:39,868 - DEBUG - Expected: REVERSE(MAP(/4,MAP(*3,x0))), Got: MAP(/4,REVERSE(MAP(*3,x0)))
+2018-12-15 08:22:04,293 - DEBUG - Expected: ZIPWITH(+,MAP(/2,x0),FILTER(<0,x0)), Got: ZIPWITH(+,FILTER(<0,x0),MAP(/2,x0))
+2018-12-15 08:22:04,329 - DEBUG - Expected: MAP(**2,MAP(**2,ZIPWITH(max,x0,x0))), Got: MAP(**2,MAP(**2,x0))
+2018-12-15 08:27:04,350 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(*,SCAN1L(min,x0),x2)), but timed out
+2018-12-15 08:27:19,679 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(max,SCAN1L(*,x0),x1),SCAN1L(*,x0)), Got: ZIPWITH(max,x1,SCAN1L(*,x0))
+2018-12-15 08:27:22,197 - DEBUG - Expected: ZIPWITH(max,DROP(x1,x0),ZIPWITH(max,x0,x0)), Got: DROP(COUNT(ODD,x0),FILTER(ODD,x0))
+2018-12-15 08:32:22,220 - DEBUG - Expected: ZIPWITH(max,SORT(x0),ZIPWITH(+,x1,x0)), but timed out
+2018-12-15 08:37:22,243 - DEBUG - Expected: ZIPWITH(*,x0,ZIPWITH(*,FILTER(<0,x2),x1)), but timed out
+2018-12-15 08:39:47,928 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(max,x1,x0),FILTER(ODD,x2)), Got: ZIPWITH(+,FILTER(ODD,x2),ZIPWITH(max,x0,x1))
+2018-12-15 08:44:47,950 - DEBUG - Expected: MAP(/3,ZIPWITH(min,MAP(-1,x0),x1)), but timed out
+2018-12-15 08:45:19,290 - DEBUG - Got expected: MAP(*-1,ZIPWITH(min,MAP(/4,x0),x0))
+2018-12-15 08:50:19,312 - DEBUG - Expected: ZIPWITH(-,x0,SCAN1L(*,MAP(/2,x0))), but timed out
+2018-12-15 08:55:19,336 - DEBUG - Expected: DROP(COUNT(<0,x2),ZIPWITH(min,x1,x0)), but timed out
+2018-12-15 08:55:19,589 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,x0,ZIPWITH(max,x1,x2)),ZIPWITH(max,x1,x2)), Got: ZIPWITH(min,x0,ZIPWITH(max,x1,x2))
+2018-12-15 09:00:19,610 - DEBUG - Expected: ZIPWITH(*,MAP(*-1,x1),ZIPWITH(max,x2,x0)), but timed out
+2018-12-15 09:00:19,638 - DEBUG - Expected: MAP(**2,MAP(/2,MAP(*2,x0))), Got: MAP(**2,x0)
+2018-12-15 09:05:19,664 - DEBUG - Expected: MAP(*2,ZIPWITH(max,MAP(/4,x0),x1)), but timed out
+2018-12-15 09:05:19,697 - DEBUG - Expected: ZIPWITH(min,MAP(*2,x0),MAP(**2,MAP(*2,x0))), Got: ZIPWITH(+,x0,x0)
+2018-12-15 09:10:19,709 - DEBUG - Expected: ZIPWITH(-,ZIPWITH(+,x0,x1),MAP(/2,x1)), but timed out
+2018-12-15 09:15:19,732 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(+,x0,x1),MAP(*-1,x2)), but timed out
+2018-12-15 09:20:19,760 - DEBUG - Expected: ZIPWITH(max,SCAN1L(-,FILTER(<0,x1)),x0), but timed out
+2018-12-15 09:25:19,783 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(+,x0,MAP(**2,x1)),MAP(**2,x1)), but timed out
+2018-12-15 09:30:19,808 - DEBUG - Expected: ZIPWITH(*,x2,ZIPWITH(max,x1,SCAN1L(+,x0))), but timed out
+2018-12-15 09:30:40,680 - DEBUG - Expected: MAP(/3,ZIPWITH(-,FILTER(>0,x0),FILTER(>0,x0))), Got: ZIPWITH(min,FILTER(>0,x0),ZIPWITH(-,x0,x0))
+2018-12-15 09:34:10,131 - DEBUG - Expected: ZIPWITH(min,REVERSE(MAP(-1,x0)),MAP(-1,x0)), Got: MAP(-1,ZIPWITH(min,REVERSE(x0),x0))
+2018-12-15 09:34:10,223 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(-,x0,TAKE(x2,x0))), Got: ZIPWITH(-,x0,ZIPWITH(-,x0,x1))
+2018-12-15 09:39:10,248 - DEBUG - Expected: ZIPWITH(min,x0,ZIPWITH(-,x1,MAP(/3,x0))), but timed out
+2018-12-15 09:40:41,973 - DEBUG - Expected: ZIPWITH(*,x0,ZIPWITH(+,x0,ZIPWITH(+,x1,x2))), Got: ZIPWITH(*,ZIPWITH(+,ZIPWITH(+,x0,x1),x2),x0)
+2018-12-15 09:45:41,995 - DEBUG - Expected: DROP(MINIMUM(MAP(*2,x1)),x0), but timed out
+2018-12-15 09:45:42,028 - DEBUG - Expected: FILTER(>0,ZIPWITH(-,MAP(/2,x0),MAP(/2,x0))), Got: FILTER(ODD,FILTER(EVEN,x0))
+2018-12-15 09:45:42,571 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(max,x0,MAP(+1,x0)),x1), Got: ZIPWITH(+,x1,MAP(+1,x0))
+2018-12-15 09:50:42,583 - DEBUG - Expected: ZIPWITH(min,REVERSE(x2),ZIPWITH(+,x0,x1)), but timed out
+2018-12-15 09:55:42,611 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(+,x1,SCAN1L(max,x0)),x1), but timed out
+2018-12-15 10:00:42,635 - DEBUG - Expected: ZIPWITH(-,MAP(-1,x0),MAP(/3,MAP(-1,x0))), but timed out
+2018-12-15 10:05:42,659 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(*,x0,SORT(x0)),ZIPWITH(*,x0,SORT(x0))), but timed out
+2018-12-15 10:10:42,681 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(-,SCAN1L(+,x0),x0)), but timed out
+2018-12-15 10:10:42,731 - DEBUG - Expected: ZIPWITH(*,DROP(x2,x0),MAP(*4,x1)), Got: FILTER(>0,FILTER(<0,x0))
+2018-12-15 10:15:42,752 - DEBUG - Expected: MAP(/3,ZIPWITH(min,ZIPWITH(max,x2,x0),x1)), but timed out
+2018-12-15 10:17:04,696 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(*,x2,x2),ZIPWITH(min,x0,x1)), Got: ZIPWITH(min,ZIPWITH(min,ZIPWITH(*,x2,x2),x0),x1)
+2018-12-15 10:19:59,926 - DEBUG - Expected: ZIPWITH(+,SCAN1L(-,x1),ZIPWITH(+,x1,x0)), Got: ZIPWITH(+,ZIPWITH(+,SCAN1L(-,x1),x0),x1)
+2018-12-15 10:22:40,734 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(min,x1,x0),SCAN1L(*,x0)), Got: ZIPWITH(min,x0,x1)
+2018-12-15 10:27:40,760 - DEBUG - Expected: SCAN1L(+,MAP(/4,TAKE(x1,x0))), but timed out
+2018-12-15 10:27:41,831 - DEBUG - Expected: ZIPWITH(*,DROP(x1,MAP(/2,x0)),x0), Got: DROP(COUNT(>0,x0),FILTER(>0,x0))
+2018-12-15 10:29:51,066 - DEBUG - Expected: ZIPWITH(min,TAKE(x1,x0),SCAN1L(min,TAKE(x1,x0))), Got: ZIPWITH(min,SCAN1L(min,TAKE(x1,x0)),x0)
+2018-12-15 10:32:27,475 - DEBUG - Expected: SUM(MAP(/3,ZIPWITH(max,x0,x0))), Got: TAIL(SCAN1L(+,MAP(/3,x0)))
+2018-12-15 10:37:27,491 - DEBUG - Expected: SCAN1L(-,ZIPWITH(max,x0,ZIPWITH(min,x1,x2))), but timed out
+2018-12-15 10:37:27,529 - DEBUG - Expected: ZIPWITH(-,SCAN1L(+,MAP(/3,x0)),SCAN1L(+,MAP(/3,x0))), Got: ZIPWITH(-,x0,x0)
+2018-12-15 10:42:27,542 - DEBUG - Expected: MAP(+1,ZIPWITH(min,ZIPWITH(*,x1,x2),x0)), but timed out
+2018-12-15 10:47:27,571 - DEBUG - Expected: DROP(x1,REVERSE(MAP(*-1,x0))), but timed out
+2018-12-15 10:47:29,618 - DEBUG - Expected: MAP(/3,ZIPWITH(max,DROP(x2,x0),x1)), Got: DROP(COUNT(EVEN,ZIPWITH(-,x0,x0)),x0)
+2018-12-15 10:52:15,377 - DEBUG - Expected: ZIPWITH(min,MAP(**2,x2),ZIPWITH(max,x1,x0)), Got: ZIPWITH(min,ZIPWITH(max,x0,x1),ZIPWITH(*,x2,x2))
+2018-12-15 10:57:15,401 - DEBUG - Expected: SCAN1L(-,SCAN1L(+,FILTER(<0,x0))), but timed out
+2018-12-15 11:02:15,430 - DEBUG - Expected: ZIPWITH(*,x1,ZIPWITH(max,x0,MAP(*4,x1))), but timed out
+2018-12-15 11:03:12,430 - DEBUG - Expected: ZIPWITH(-,ZIPWITH(*,x1,ZIPWITH(*,x2,x0)),ZIPWITH(*,x1,ZIPWITH(*,x2,x0))), Got: ZIPWITH(*,ZIPWITH(*,ZIPWITH(-,x0,x0),x1),x2)
+2018-12-15 11:08:12,450 - DEBUG - Expected: ZIPWITH(+,x2,SCAN1L(-,ZIPWITH(*,x0,x1))), but timed out
+2018-12-15 11:13:12,472 - DEBUG - Expected: MAP(*4,ZIPWITH(min,MAP(/3,x0),x0)), but timed out
+2018-12-15 11:13:33,061 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(-,x0,ZIPWITH(+,x2,x1)),x1), Got: ZIPWITH(*,ZIPWITH(-,ZIPWITH(-,x0,x1),x2),x1)
+2018-12-15 11:14:58,320 - DEBUG - Got expected: ZIPWITH(+,ZIPWITH(+,ZIPWITH(max,x1,x2),x0),x1)
+2018-12-15 11:19:58,344 - DEBUG - Expected: MAP(+1,ZIPWITH(max,ZIPWITH(max,x0,x2),x1)), but timed out
+2018-12-15 11:24:58,373 - DEBUG - Expected: ZIPWITH(+,ZIPWITH(+,x0,x1),MAP(*4,ZIPWITH(+,x0,x1))), but timed out
+2018-12-15 16:54:15,400 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo
+2018-12-15 16:55:39,894 - DEBUG - Starting script python -m run --program-size=3 --data-set=test --synthesizer=neo
+2018-12-15 16:55:50,141 - DEBUG - Got expected: MINIMUM(FILTER(ODD,MAP(+1,x0)))
+2018-12-15 16:55:51,721 - DEBUG - Expected: COUNT(>0,DROP(x1,SCAN1L(*,x0))), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 16:58:51,735 - DEBUG - Expected: TAIL(TAKE(SUM(x0),x1)), but timed out
+2018-12-15 16:59:13,694 - DEBUG - Expected: COUNT(EVEN,FILTER(>0,REVERSE(x0))), Got: COUNT(ODD,MAP(+1,FILTER(>0,x0)))
+2018-12-15 16:59:14,574 - DEBUG - Expected: SUM(MAP(+1,SORT(x0))), Got: SUM(ZIPWITH(max,MAP(+1,x0),x0))
+2018-12-15 17:02:06,870 - DEBUG - Expected: HEAD(SCAN1L(*,MAP(*3,x0))), Got: SUM(ZIPWITH(+,MAP(*3,x0),x0))
+2018-12-15 17:02:06,940 - DEBUG - Expected: COUNT(ODD,ZIPWITH(+,ZIPWITH(*,x0,x0),x1)), Got: COUNT(ODD,ZIPWITH(+,x0,x1))
+2018-12-15 17:02:15,688 - DEBUG - Expected: MINIMUM(SCAN1L(-,MAP(*2,x0))), Got: MINIMUM(MAP(*2,SCAN1L(-,x0)))
+2018-12-15 17:02:15,750 - DEBUG - Expected: COUNT(>0,DROP(x2,ZIPWITH(+,x1,x0))), Got: COUNT(ODD,ZIPWITH(-,x0,x0))
+2018-12-15 17:02:22,018 - DEBUG - Expected: COUNT(>0,ZIPWITH(+,x0,SCAN1L(-,x0))), Got: COUNT(>0,ZIPWITH(+,SCAN1L(-,x0),x0))
+2018-12-15 17:02:22,139 - DEBUG - Expected: MAXIMUM(MAP(*4,SCAN1L(max,x0))), Got: MAXIMUM(MAP(*4,x0))
+2018-12-15 17:05:22,155 - DEBUG - Expected: HEAD(ZIPWITH(max,x1,ZIPWITH(+,x1,x0))), but timed out
+2018-12-15 17:05:24,439 - DEBUG - Expected: TAIL(ZIPWITH(-,x1,ZIPWITH(-,x0,x2))), Got: TAIL(ZIPWITH(+,ZIPWITH(-,x1,x0),x2))
+2018-12-15 17:05:24,508 - DEBUG - Expected: COUNT(EVEN,MAP(*3,ZIPWITH(*,x0,x1))), Got: COUNT(EVEN,ZIPWITH(*,x0,x1))
+2018-12-15 17:08:24,519 - DEBUG - Expected: TAIL(MAP(*-1,REVERSE(x0))), but timed out
+2018-12-15 17:08:24,895 - DEBUG - Got expected: SUM(ZIPWITH(min,ZIPWITH(max,x0,x1),x2))
+2018-12-15 17:11:24,913 - DEBUG - Expected: HEAD(ZIPWITH(-,x0,FILTER(EVEN,x0))), but timed out
+2018-12-15 17:11:30,875 - DEBUG - Got expected: ACCESS(COUNT(EVEN,x0),MAP(+1,x0))
+2018-12-15 17:11:31,379 - DEBUG - Expected: TAIL(ZIPWITH(*,SCAN1L(*,x0),x0)), Got: ACCESS(COUNT(<0,x0),SCAN1L(*,x0))
+2018-12-15 17:14:31,394 - DEBUG - Expected: MAXIMUM(MAP(+1,ZIPWITH(max,x0,x0))), but timed out
+2018-12-15 17:14:38,807 - DEBUG - Expected: COUNT(<0,ZIPWITH(max,MAP(**2,x1),x0)), Got: ACCESS(COUNT(ODD,x0),ZIPWITH(-,x0,x0))
+2018-12-15 17:14:39,077 - DEBUG - Expected: MINIMUM(ZIPWITH(min,ZIPWITH(max,x1,x0),x1)), Got: MINIMUM(ZIPWITH(min,ZIPWITH(-,x0,x0),x1))
+2018-12-15 17:14:39,131 - DEBUG - Expected: COUNT(>0,MAP(*-1,ZIPWITH(*,x1,x0))), Got: COUNT(<0,ZIPWITH(*,x0,x1))
+2018-12-15 17:15:16,860 - DEBUG - Expected: ZIPWITH(+,x1,ZIPWITH(max,x2,ZIPWITH(*,x0,x1))), Got: ZIPWITH(+,ZIPWITH(max,ZIPWITH(*,x0,x1),x2),x1)
+2018-12-15 17:16:02,360 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(-,ZIPWITH(min,x2,x0),x1),x2), Got: ZIPWITH(*,ZIPWITH(-,ZIPWITH(min,x0,x2),x1),x2)
+2018-12-15 17:16:03,547 - DEBUG - Expected: ZIPWITH(-,x2,ZIPWITH(-,x0,ZIPWITH(min,x1,x1))), Got: ZIPWITH(-,x1,ZIPWITH(-,x0,x2))
+2018-12-15 17:19:03,565 - DEBUG - Expected: ZIPWITH(+,MAP(/2,x1),ZIPWITH(-,x0,x2)), but timed out
+2018-12-15 17:22:03,587 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(max,x0,SCAN1L(min,x1)),ZIPWITH(max,x0,SCAN1L(min,x1))), but timed out
+2018-12-15 17:22:06,737 - DEBUG - Got expected: FILTER(>0,SCAN1L(+,MAP(-1,x0)))
+2018-12-15 17:22:07,288 - DEBUG - Expected: ZIPWITH(min,ZIPWITH(*,x0,MAP(/2,x0)),x0), Got: ZIPWITH(min,ZIPWITH(-,ZIPWITH(*,x0,x0),x0),x0)
+2018-12-15 17:22:10,901 - DEBUG - Expected: ZIPWITH(-,SCAN1L(+,x1),TAKE(x2,x0)), Got: ZIPWITH(-,SCAN1L(+,x1),x0)
+2018-12-15 17:25:10,919 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(min,FILTER(<0,x0),x1),x1), but timed out
+2018-12-15 17:28:10,937 - DEBUG - Expected: ZIPWITH(*,ZIPWITH(min,x2,x0),MAP(/4,x1)), but timed out
+2018-12-15 17:28:10,967 - DEBUG - Expected: ZIPWITH(min,MAP(*-1,ZIPWITH(-,x0,x0)),MAP(*-1,ZIPWITH(-,x0,x0))), Got: ZIPWITH(-,x0,x0)
+2018-12-15 17:31:10,980 - DEBUG - Expected: ZIPWITH(-,x1,ZIPWITH(max,x0,MAP(+1,x1))), but timed out
+2018-12-15 17:31:13,185 - DEBUG - Expected: MAP(/3,ZIPWITH(max,DROP(x2,x0),x1)), Got: DROP(COUNT(EVEN,ZIPWITH(-,x0,x0)),x0)
+2018-12-15 17:31:24,987 - DEBUG - Expected: ZIPWITH(max,ZIPWITH(*,ZIPWITH(max,x0,x1),x1),ZIPWITH(max,x0,x1)), Got: ZIPWITH(max,ZIPWITH(*,ZIPWITH(max,x0,x1),x1),x0)
+2018-12-15 17:34:24,998 - DEBUG - Expected: SCAN1L(-,MAP(-1,REVERSE(x0))), but timed out
+2018-12-15 17:37:25,012 - DEBUG - Expected: TAKE(COUNT(EVEN,ZIPWITH(min,x0,x0)),x1), but timed out
+2018-12-15 17:40:25,046 - DEBUG - Expected: ZIPWITH(min,FILTER(>0,MAP(*2,x0)),x0), but timed out
+2018-12-15 17:40:25,074 - DEBUG - Expected: MAP(/3,ZIPWITH(min,ZIPWITH(min,x0,x0),ZIPWITH(min,x0,x0))), Got: MAP(/3,x0)
